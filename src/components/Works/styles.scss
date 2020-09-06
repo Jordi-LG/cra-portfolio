@@ -9,7 +9,7 @@
   }
 
   &__accordion {
-    margin: vars.$gutter * 1.5 auto;
+    margin: $gutter * 1.5 auto;
     max-width: 500px;
   }
 
@@ -27,7 +27,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: vars.$gutter;
+    padding: $gutter;
     font-weight: bold;
     box-shadow: inset 0px 0px 8px black;
   }
@@ -41,7 +41,7 @@
   }
 
   &__title--3 {
-    background-color: color.scale(vars.$color-secondary, $lightness: 50%);
+    background-color: color.scale($color-secondary, $lightness: 50%);
   }
 
   &__icon {
@@ -89,7 +89,7 @@
   }
 
   &__describe {
-    padding: vars.$gutter;
+    padding: $gutter;
   }
 
   &__tags {
@@ -99,12 +99,12 @@
   }
 
   &__tag {
-    margin: 0 vars.$gutter;
+    margin: 0 $gutter;
     padding: 0.6em 0;
   }
 
   &__buttons {
-    padding: vars.$gutter;
+    padding: $gutter;
     display: flex;
     justify-content: space-around;
   }
@@ -121,7 +121,7 @@ hr {
   border-top: 1px solid rgba(255,255,255,.3);
   border-bottom: 1px solid rgba(0,0,0,.08);
   position: relative;
-  margin: vars.$gutter * 1.2 0;
+  margin: $gutter * 1.2 0;
 }
 
 

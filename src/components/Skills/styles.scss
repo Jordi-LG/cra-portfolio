@@ -3,20 +3,20 @@
 
 .skills {
   color: #FFF;
-  padding: 0 vars.$gutter;
+  padding: 0 $gutter;
   padding-top: 10em;
   text-align: center;
   
   &__title {
     height: 10%;
-    font-size: vars.$title-size;
+    font-size: $title-size;
     font-weight: bold;
     margin-bottom: 1em;
   }
   &__content {
     height: 90%;
     font-size: 0.9em;
-    line-height: vars.$title-line-height / 1.1;
+    line-height: $title-line-height / 1.1;
     overflow-y: auto;
     padding-bottom: 1em;
   }
@@ -64,7 +64,7 @@
     cursor: pointer;
 
     &:hover {
-      color: color.scale(vars.$color-active, $lightness: 40%);
+      color: color.scale($color-active, $lightness: 40%);
       font-weight: bold;
     }
     
@@ -78,14 +78,14 @@
     }
 
     &:before {
-      border-top: 2px solid color.scale(vars.$color-active, $lightness: 40%);
-      border-bottom: 2px solid color.scale(vars.$color-active, $lightness: 40%);
+      border-top: 2px solid color.scale($color-active, $lightness: 40%);
+      border-bottom: 2px solid color.scale($color-active, $lightness: 40%);
       transform: scale3d(0,1,1); // Shrink only width
     }
   
     &:after {
-      border-left: 2px solid color.scale(vars.$color-active, $lightness: 40%);
-      border-right: 2px solid color.scale(vars.$color-active, $lightness: 40%);
+      border-left: 2px solid color.scale($color-active, $lightness: 40%);
+      border-right: 2px solid color.scale($color-active, $lightness: 40%);
       transform: scale3d(1,0,1); // Shrink only height
     }
   
@@ -101,13 +101,13 @@
   .skills {
     padding-top: 6em;
     &__title {
-      font-size: vars.$title-size * 1.2;
+      font-size: $title-size * 1.2;
     }
     &__content {
       font-size: 1.0em;
     }
     &__list-1, &__list-2 {
-      margin-bottom: vars.$gutter;
+      margin-bottom: $gutter;
     }
   }
 }
@@ -115,13 +115,13 @@
 @media (min-width: 748px) {
   .skills {
     &__content {
-      margin-top: vars.$gutter * 5;
+      margin-top: $gutter * 5;
     }
     &__list {
-      margin-top: vars.$gutter * 5;
+      margin-top: $gutter * 5;
     }
     &__list-1, &__list-2 {
-      margin-bottom: vars.$gutter * 2;
+      margin-bottom: $gutter * 2;
     }
   }
 }

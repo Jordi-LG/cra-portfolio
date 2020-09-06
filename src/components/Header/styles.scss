@@ -2,7 +2,7 @@
 @use 'sass:color';
 
 .header {
-  background-color: vars.$color-secondary;
+  background-color: $color-secondary;
   color: #FFF;
   height: 75px;
   position: fixed;
@@ -31,7 +31,7 @@
     height: 100%;
     padding-top: 5px;
     padding-left: 0.8em;
-    border-right: 10px double color.scale(vars.$color-active, $lightness: -50%);
+    border-right: 10px double color.scale($color-active, $lightness: -50%);
   }
   
   &__list {
@@ -62,7 +62,7 @@
     }
 
     &--active {
-      color: vars.$color-active;
+      color: $color-active;
     }
 
     &--home {

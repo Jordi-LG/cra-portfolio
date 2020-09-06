@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router } from 'react-router-dom';
+import store from 'src/store';
 import Portfolio from 'src/components/Portfolio';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Portfolio />
+    <Provider store={store}>
+      <Router>
+        <Portfolio />
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
