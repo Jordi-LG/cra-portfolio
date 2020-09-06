@@ -21,6 +21,7 @@ const Skills = () => (
 
       <div className="skills__list-2">
         <article className="skills__item">React</article>
+        <article className="skills__item">Redux</article>
         <article className="skills__item">Vue.js</article>
         <article className="skills__item">Ruby On Rails</article>
       </div>
