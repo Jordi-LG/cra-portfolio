@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.d220dd56.chunk.css",
-    "main.js": "/static/js/main.28cde53b.chunk.js",
-    "main.js.map": "/static/js/main.28cde53b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a9443edb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a9443edb.js.map",
-    "static/js/2.f8f4bfc4.chunk.js": "/static/js/2.f8f4bfc4.chunk.js",
-    "static/js/2.f8f4bfc4.chunk.js.map": "/static/js/2.f8f4bfc4.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e606c2ebdee3c2e7d1d24b586f336061.js": "/precache-manifest.e606c2ebdee3c2e7d1d24b586f336061.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.d220dd56.chunk.css.map": "/static/css/main.d220dd56.chunk.css.map",
-    "static/js/2.f8f4bfc4.chunk.js.LICENSE.txt": "/static/js/2.f8f4bfc4.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/static/media/Roboto-Regular.11eabca2.ttf",
-    "static/media/gardien.png": "/static/media/gardien.7127ce31.png",
-    "static/media/logo.png": "/static/media/logo.f6125c19.png"
+    "main.css": "/cra-portfolio/static/css/main.bc53ea48.chunk.css",
+    "main.js": "/cra-portfolio/static/js/main.0a8097ed.chunk.js",
+    "main.js.map": "/cra-portfolio/static/js/main.0a8097ed.chunk.js.map",
+    "runtime-main.js": "/cra-portfolio/static/js/runtime-main.4798739f.js",
+    "runtime-main.js.map": "/cra-portfolio/static/js/runtime-main.4798739f.js.map",
+    "static/js/2.f8f4bfc4.chunk.js": "/cra-portfolio/static/js/2.f8f4bfc4.chunk.js",
+    "static/js/2.f8f4bfc4.chunk.js.map": "/cra-portfolio/static/js/2.f8f4bfc4.chunk.js.map",
+    "index.html": "/cra-portfolio/index.html",
+    "precache-manifest.e0bfdfbf3101317038793760b08e4e61.js": "/cra-portfolio/precache-manifest.e0bfdfbf3101317038793760b08e4e61.js",
+    "service-worker.js": "/cra-portfolio/service-worker.js",
+    "static/css/main.bc53ea48.chunk.css.map": "/cra-portfolio/static/css/main.bc53ea48.chunk.css.map",
+    "static/js/2.f8f4bfc4.chunk.js.LICENSE.txt": "/cra-portfolio/static/js/2.f8f4bfc4.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/cra-portfolio/static/media/Roboto-Regular.11eabca2.ttf",
+    "static/media/gardien.png": "/cra-portfolio/static/media/gardien.7127ce31.png",
+    "static/media/logo.png": "/cra-portfolio/static/media/logo.f6125c19.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9443edb.js",
+    "static/js/runtime-main.4798739f.js",
     "static/js/2.f8f4bfc4.chunk.js",
-    "static/css/main.d220dd56.chunk.css",
-    "static/js/main.28cde53b.chunk.js"
+    "static/css/main.bc53ea48.chunk.css",
+    "static/js/main.0a8097ed.chunk.js"
   ]
 }
