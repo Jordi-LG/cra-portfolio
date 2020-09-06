@@ -1,5 +1,5 @@
-@use 'reset';
-@use 'vars';
+@import 'reset';
+@import 'src/styles/_vars.scss';
 
 @font-face {
   font-family: 'Roboto';
@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: vars.$color-primary;
-  font-family: 'Open Sans', sans-serif;
+  background-color: $color-primary;
+  font-family: 'Roboto', sans-serif;
 
   overflow-y: auto;
   overflow-x: hidden;

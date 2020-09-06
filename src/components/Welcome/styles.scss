@@ -1,5 +1,4 @@
-@use 'src/styles/vars';
-@use 'sass:color';
+@import 'src/styles/_vars.scss';
 
 .welcome {
   height: 100%;
@@ -64,35 +63,35 @@
     white-space: normal;
   }
   &__linkedin {
-    box-shadow: 0px 6px 0px 0px darken(color.scale(#0077B5, $lightness: -20%), 5%);
+    box-shadow: 0px 6px 0px 0px darken(darken(#0077B5, 20%), 5%);
     background-color: #0077B5;
     &:active {
       top: 4px;
-      box-shadow: 0px 4px 0px 0px darken(color.scale(#0077B5, $lightness: -20%), 5%);
+      box-shadow: 0px 4px 0px 0px darken(darken(#0077B5, 20%), 5%);
     }
   }
   &__twitter {
-    box-shadow: 0px 6px 0px 0px darken(color.scale(#1DA1F2, $lightness: -20%), 5%);
+    box-shadow: 0px 6px 0px 0px darken(darken(#1DA1F2, 20%), 5%);
     background-color: #1DA1F2;
     &:active {
       top: 4px;
-      box-shadow: 0px 4px 0px 0px darken(color.scale(#1DA1F2, $lightness: -20%), 5%);
+      box-shadow: 0px 4px 0px 0px darken(darken(#1DA1F2, 20%), 5%);
     }
   }
   &__github {
-    box-shadow: 0px 6px 0px 0px darken(color.scale(#24292E, $lightness: -20%), 5%);
+    box-shadow: 0px 6px 0px 0px darken(darken(#24292E, 20%), 5%);
     background-color: #24292E;
     &:active {
       top: 4px;
-      box-shadow: 0px 4px 0px 0px darken(color.scale(#24292E, $lightness: -20%), 5%);
+      box-shadow: 0px 4px 0px 0px darken(darken(#24292E, 20%), 5%);
     }
   }
   &__email {
-    box-shadow: 0px 6px 0px 0px darken(color.scale(#DC4A3E, $lightness: -20%), 5%);
+    box-shadow: 0px 6px 0px 0px darken(darken(#DC4A3E, 20%), 5%);
     background-color: #DC4A3E;
     &:active {
       top: 4px;
-      box-shadow: 0px 4px 0px 0px darken(color.scale(#DC4A3E, $lightness: -20%), 5%);
+      box-shadow: 0px 4px 0px 0px darken(darken(#DC4A3E, 20%), 5%);
     }
   }
 }

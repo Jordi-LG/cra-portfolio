@@ -6,6 +6,8 @@ import store from 'src/store';
 import Portfolio from 'src/components/Portfolio';
 import * as serviceWorker from './serviceWorker';
 
+import 'src/styles/index.scss';
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

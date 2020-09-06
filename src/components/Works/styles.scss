@@ -1,5 +1,4 @@
-@use 'src/styles/vars';
-@use 'sass:color';
+@import 'src/styles/_vars.scss';
 
 .works {
   padding-top: 10em;
@@ -33,20 +32,20 @@
   }
 
   &__title--1 {
-    background-color: color.scale(#77C369, $lightness: 40%);
+    background-color: lighten(#77C369, 40%);
   }
 
   &__title--2 {
-    background-color: color.scale(#FCF9F0, $lightness: -10%);
+    background-color: darken(#FCF9F0, 10%);
   }
 
   &__title--3 {
-    background-color: color.scale($color-secondary, $lightness: 50%);
+    background-color: lighten($color-secondary, 50%);
   }
 
   &__icon {
     position: absolute;
-    background-color: color.scale(#EAEAEA, $lightness: -10%);
+    background-color: darken(#EAEAEA, 10%);
     bottom: 7px;
     right: 15px;
     display: flex;
@@ -58,7 +57,7 @@
     z-index: 1;
     &:hover {
       cursor: pointer;
-      background-color: color.scale(#EAEAEA, $lightness: -20%);
+      background-color: darken(#EAEAEA, 20%);
     }
     transition: transform .2s ease-in-out;  
   }

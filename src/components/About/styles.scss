@@ -1,5 +1,4 @@
-@use 'src/styles/vars';
-@use 'sass:color';
+@import 'src/styles/_vars.scss';
 
 .about {
   padding: 0 $gutter;
@@ -25,7 +24,7 @@
   }
 
   &__content a {
-    color: color.scale($color-primary, $lightness: 75%);
+    color: lighten($color-primary, 75%);
     text-decoration: underline;
     &:hover {
       font-weight: bold;

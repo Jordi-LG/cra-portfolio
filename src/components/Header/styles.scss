@@ -1,5 +1,4 @@
-@use 'src/styles/vars';
-@use 'sass:color';
+@import 'src/styles/vars';
 
 .header {
   background-color: $color-secondary;
@@ -31,7 +30,7 @@
     height: 100%;
     padding-top: 5px;
     padding-left: 0.8em;
-    border-right: 10px double color.scale($color-active, $lightness: -50%);
+    border-right: 10px double darken($color-active, 50%);
   }
   
   &__list {

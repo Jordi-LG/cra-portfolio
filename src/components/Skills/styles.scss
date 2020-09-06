@@ -1,5 +1,4 @@
-@use 'src/styles/vars';
-@use 'sass:color';
+@import 'src/styles/vars';
 
 .skills {
   color: #FFF;
@@ -64,7 +63,7 @@
     cursor: pointer;
 
     &:hover {
-      color: color.scale($color-active, $lightness: 40%);
+      color: lighten($color-active, 40%);
       font-weight: bold;
     }
     
@@ -78,14 +77,14 @@
     }
 
     &:before {
-      border-top: 2px solid color.scale($color-active, $lightness: 40%);
-      border-bottom: 2px solid color.scale($color-active, $lightness: 40%);
+      border-top: 2px solid lighten($color-active, 40%);
+      border-bottom: 2px solid lighten($color-active, 40%);
       transform: scale3d(0,1,1); // Shrink only width
     }
   
     &:after {
-      border-left: 2px solid color.scale($color-active, $lightness: 40%);
-      border-right: 2px solid color.scale($color-active, $lightness: 40%);
+      border-left: 2px solid lighten($color-active, 40%);
+      border-right: 2px solid lighten($color-active, 40%);
       transform: scale3d(1,0,1); // Shrink only height
     }
   
