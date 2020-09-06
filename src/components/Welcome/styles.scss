@@ -1,0 +1,192 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.welcome {
+  height: 100%;
+  padding: 3em 2em 5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+  &__title {
+    font-size: vars.$title-size;
+    line-height: vars.$title-line-height;
+    font-weight: bold;
+
+    margin-bottom: vars.$gutter * 2;
+  }
+  &__content {
+    font-size: 0.9em;
+    margin-bottom: vars.$gutter * 6;
+  }
+
+  &__buttons {
+    position: fixed;
+    bottom: 6%;
+
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.button__container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+
+  padding: 1em;
+  margin: 1em;
+  border-radius: 0.7em;
+  transition: all 0.2s;
+  width: 150px;
+
+  &__line {
+    border-right: 1px solid black;
+    height: 2em;
+    margin: 0 0.7em;
+  }
+  &__content {
+    white-space: normal;
+  }
+  &__linkedin {
+    box-shadow: 0px 6px 0px 0px darken(color.scale(#0077B5, $lightness: -20%), 5%);
+    background-color: #0077B5;
+    &:active {
+      top: 4px;
+      box-shadow: 0px 4px 0px 0px darken(color.scale(#0077B5, $lightness: -20%), 5%);
+    }
+  }
+  &__twitter {
+    box-shadow: 0px 6px 0px 0px darken(color.scale(#1DA1F2, $lightness: -20%), 5%);
+    background-color: #1DA1F2;
+    &:active {
+      top: 4px;
+      box-shadow: 0px 4px 0px 0px darken(color.scale(#1DA1F2, $lightness: -20%), 5%);
+    }
+  }
+  &__github {
+    box-shadow: 0px 6px 0px 0px darken(color.scale(#24292E, $lightness: -20%), 5%);
+    background-color: #24292E;
+    &:active {
+      top: 4px;
+      box-shadow: 0px 4px 0px 0px darken(color.scale(#24292E, $lightness: -20%), 5%);
+    }
+  }
+  &__email {
+    box-shadow: 0px 6px 0px 0px darken(color.scale(#DC4A3E, $lightness: -20%), 5%);
+    background-color: #DC4A3E;
+    &:active {
+      top: 4px;
+      box-shadow: 0px 4px 0px 0px darken(color.scale(#DC4A3E, $lightness: -20%), 5%);
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  // Display the text content with different properties
+  .welcome {    
+    padding-top: 1em; 
+    margin-left: vars.$gutter * 2;
+    &__title {
+      font-size: vars.$title-size * 1.3;
+      margin-top: vars.$gutter * 2;
+      margin-bottom: vars.$gutter * 2;
+    }
+    &__content {
+      font-size: vars.$content-size * 1.3;
+      margin-bottom: vars.$gutter * 8.5;
+    }
+    &__buttons {
+      width: 80%;
+      justify-content: center;
+    }
+  }
+  .button {
+    width: 200px;
+    transition: all 0.2s linear 0s;
+    padding: 1em 0em 1em 3em;
+    position: relative;
+    
+    &:before {
+      content: "\f0a4";
+      font-family: "Font Awesome 5 Free";
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: -25%;
+      width: 25%;
+      height: 100%;
+      background-color: rgba(#fff,0.3);
+      border-radius: 0px 6px 6px 0px;
+      transition: all 0.2s linear 0s;
+      text-align: center;
+    }
+    &:hover {
+      padding: 1em 3em 1em 1em;
+    &:before {
+      right: 0;
+      text-indent: 0px;
+    }
+  }
+  }
+}
+
+@media (min-width: 748px) {
+  .button {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .welcome {
+    margin-left: vars.$gutter * 10;
+    &__buttons {
+      width: 70%;
+      justify-content: center;
+    }
+    &__buttons {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .button__container {
+    width: 25%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+@media (max-height: 630px) {
+  .welcome {
+    padding-top: 18em;
+    &__buttons {
+      position: relative;
+    }
+    &__title {
+      margin-bottom: vars.$gutter;
+    }
+    &__content {
+      margin-bottom: vars.$gutter;
+    }
+  }
+}

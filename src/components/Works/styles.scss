@@ -1,0 +1,144 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.works {
+  padding-top: 10em;
+  &__list-right, &__list-left {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__accordion {
+    margin: vars.$gutter * 1.5 auto;
+    max-width: 500px;
+  }
+
+  &__img {
+    height: 140px;
+    width: 100%;
+
+    box-shadow: inset 0px 0px 10px black;
+    position: relative;
+    overflow: auto;
+    background-position: center;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: vars.$gutter;
+    font-weight: bold;
+    box-shadow: inset 0px 0px 8px black;
+  }
+
+  &__title--1 {
+    background-color: color.scale(#77C369, $lightness: 40%);
+  }
+
+  &__title--2 {
+    background-color: color.scale(#FCF9F0, $lightness: -10%);
+  }
+
+  &__title--3 {
+    background-color: color.scale(vars.$color-secondary, $lightness: 50%);
+  }
+
+  &__icon {
+    position: absolute;
+    background-color: color.scale(#EAEAEA, $lightness: -10%);
+    bottom: 7px;
+    right: 15px;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding: auto;
+    z-index: 1;
+    &:hover {
+      cursor: pointer;
+      background-color: color.scale(#EAEAEA, $lightness: -20%);
+    }
+    transition: transform .2s ease-in-out;  
+  }
+
+  &__icon--open {
+    transform: rotate(180deg);
+  }
+
+  &__icon > i {
+    width: 100%;
+    margin: auto 0;
+    justify-content: space-between;
+  }
+
+  &__panel {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: #EAEAEA;
+    box-shadow: inset 0px 0px 5px #EAEAEA;
+    border-radius: 0 0 5% 5%;
+    transition: all 0.3s;  
+  }
+
+  &__panel--open {
+    opacity: 1;
+    max-height: 400px;
+  }
+
+  &__describe {
+    padding: vars.$gutter;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__tag {
+    margin: 0 vars.$gutter;
+    padding: 0.6em 0;
+  }
+
+  &__buttons {
+    padding: vars.$gutter;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__link {
+    color: #005A9C;
+    border-radius: 50%;
+  }
+}
+
+// https://codepen.io/sbeatty/pen/phxon
+hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,.3);
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  position: relative;
+  margin: vars.$gutter * 1.2 0;
+}
+
+
+@media (min-width: 1140px) {
+  .works {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1400px;
+    &__list-left, &__list-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__accordion {
+      width: 500px;
+    }
+  }
+
+}

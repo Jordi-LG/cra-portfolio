@@ -1,0 +1,167 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.skills {
+  color: #FFF;
+  padding: 0 vars.$gutter;
+  padding-top: 10em;
+  text-align: center;
+  
+  &__title {
+    height: 10%;
+    font-size: vars.$title-size;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  &__content {
+    height: 90%;
+    font-size: 0.9em;
+    line-height: vars.$title-line-height / 1.1;
+    overflow-y: auto;
+    padding-bottom: 1em;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  &__list-1, &__list-2, &__list-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  &__list-2 {
+    grid-row: 1;
+  }
+
+  &_list-3 {
+    grid-row: 1
+  }
+
+  &__item {
+    color:#EAEAEA;
+    margin: 1em;
+    padding: 1em;
+
+    border: 0;
+    box-sizing: border-box;
+    box-shadow: inset 0 -4px 2px -2px #EAEAEA;
+    position: relative;
+
+    // https://codepen.io/thangkieu91/pen/DcuHh/
+    &::before,
+    &::after {
+      box-sizing: inherit;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    cursor: pointer;
+
+    &:hover {
+      color: color.scale(vars.$color-active, $lightness: 40%);
+      font-weight: bold;
+    }
+    
+    &:before,
+    &:after {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      transform-origin: center; // Ensure scaling is done from the center (expands outwards)
+    }
+
+    &:before {
+      border-top: 2px solid color.scale(vars.$color-active, $lightness: 40%);
+      border-bottom: 2px solid color.scale(vars.$color-active, $lightness: 40%);
+      transform: scale3d(0,1,1); // Shrink only width
+    }
+  
+    &:after {
+      border-left: 2px solid color.scale(vars.$color-active, $lightness: 40%);
+      border-right: 2px solid color.scale(vars.$color-active, $lightness: 40%);
+      transform: scale3d(1,0,1); // Shrink only height
+    }
+  
+    &:hover:before,
+    &:hover:after {
+      transform: scale3d(1,1,1); // Show full-size
+      transition: transform 1s;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .skills {
+    padding-top: 6em;
+    &__title {
+      font-size: vars.$title-size * 1.2;
+    }
+    &__content {
+      font-size: 1.0em;
+    }
+    &__list-1, &__list-2 {
+      margin-bottom: vars.$gutter;
+    }
+  }
+}
+
+@media (min-width: 748px) {
+  .skills {
+    &__content {
+      margin-top: vars.$gutter * 5;
+    }
+    &__list {
+      margin-top: vars.$gutter * 5;
+    }
+    &__list-1, &__list-2 {
+      margin-bottom: vars.$gutter * 2;
+    }
+  }
+}
+
+@media (min-width: 1140px) {
+  br {
+    content: "";
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    text-align: left;
+
+    &__title,
+    &__content {
+      width: 30%;
+    }
+
+    &__title {
+      margin: 0;
+      margin-top: 5em;
+      height: calc(40% - 5em);
+    }
+
+
+    &__content {
+      height: 60%;
+      margin: 0;
+    }
+    &__list {
+      height: 100%;
+      margin: 0;
+      margin: 10em auto;
+    }
+  }
+
+}

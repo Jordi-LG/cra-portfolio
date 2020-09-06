@@ -1,0 +1,58 @@
+@use 'src/styles/vars';
+@use 'sass:color';
+
+.about {
+  padding: 0 vars.$gutter;
+  padding-top: 10em;
+  color: #FFF;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    height: 10%;
+    font-size: vars.$title-size;
+    font-weight: bold;
+  }
+
+  &__content {
+    height: 90%;
+    font-size: 1em;
+    line-height: vars.$title-line-height / 1.1;
+    overflow-y: auto;
+    padding-bottom: 1em;
+  }
+
+  &__content a {
+    color: color.scale(vars.$color-primary, $lightness: 75%);
+    text-decoration: underline;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .about {
+    padding: 0 vars.$gutter;
+    padding-top: 6em;
+  
+    &__title {
+      font-size: vars.$title-size * 1.2;
+    }
+    &__content {
+      margin-top: 2em;
+      font-size: 1.1em;
+    }
+  
+  }
+}
+
+@media (min-width: 950px) {
+  .about {
+    &__content {
+      width: 50%;
+    }
+  }
+}
