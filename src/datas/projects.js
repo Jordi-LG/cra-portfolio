@@ -28,7 +28,7 @@ export default [
     title: 'Portfolio',
     describe: 'Mon portfolio réalisé en React/Redux',
     urlGitHub: 'https://github.com/Jordi-LG/Portfolio',
-    url: '',
+    url: 'https://jordi-lg.github.io/',
     trello: '',
     tags: ['Javascript', 'React', 'Redux'],
     img: portfolio,
