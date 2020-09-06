@@ -1,7 +1,7 @@
 {
   "name": "cra-portfolio",
   "version": "0.1.0",
-  "homepage": "https://Jordi-LG.github.io/",
+  "homepage": "https://Jordi-LG.github.io/cra-portfolio",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@svgr/webpack": "4.3.3",
