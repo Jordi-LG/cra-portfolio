@@ -148,14 +148,15 @@
     &__title {
       margin: 0;
       margin-top: 5em;
-      height: calc(40% - 5em);
     }
 
 
     &__content {
-      height: 60%;
+      height: 180px;
       margin: 0;
+      margin-top: 1em;
     }
+
     &__list {
       height: 100%;
       margin: 0;
@@ -163,4 +164,33 @@
     }
   }
 
+}
+
+@media (max-height:650px) {
+  .skills {
+    &__title {
+      margin-top: 2em;
+    }
+    &__list {
+      margin: 3em auto;
+    }
+  }
+}
+
+@media (max-height:450px) {
+  .skills {
+    &__title {
+      margin-top: 0.5em;
+    }
+
+    &__content {
+      height: 120px;
+      margin: 0;
+      margin-top: 2em;
+    }
+
+    &__list {
+      margin: 2em auto;
+    }
+  }
 }
