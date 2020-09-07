@@ -158,7 +158,7 @@
   .welcome {
     margin-left: $gutter * 10;
     &__buttons {
-      width: 70%;
+
       justify-content: center;
     }
     &__buttons {
@@ -172,6 +172,7 @@
 
   .button {
     width: 100%;
+    max-width: 300px;
   }
 }
 
