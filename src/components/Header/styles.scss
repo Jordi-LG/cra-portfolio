@@ -119,3 +119,12 @@
     }
   }
 }
+
+@media (min-width: 1140px) {
+  .nav {
+    &__list {
+      width: 70%;
+    }
+  }
+
+}
