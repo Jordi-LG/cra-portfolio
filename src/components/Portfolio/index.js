@@ -1,6 +1,6 @@
 // == Import npm
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 // == Import
 import './styles.scss';
@@ -27,6 +27,7 @@ const Portfolio = () => (
       <Route path="/projects" exact>
         <Works />
       </Route>
+      <Route render={() => <Redirect to="/" />} />
     </Switch>
   </div>
 );
