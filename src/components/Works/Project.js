@@ -57,10 +57,10 @@ const Project = ({
           <hr />
 
           <div className="works__buttons">
-            <a href={url} rel="noreferrer" target="_blank" className="works__link">
+            <a href={url} rel="noopener noreferrer" target="_blank" className="works__link">
               <i className="fas fa-globe fa-4x" />
             </a>
-            <a href={urlGitHub} rel="noreferrer" target="_blank" className="projects__github">
+            <a href={urlGitHub} rel="noopener noreferrer" target="_blank" className="projects__github">
               <i className="fab fa-github fa-4x" />
             </a>
           </div>

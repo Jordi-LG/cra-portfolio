@@ -7,6 +7,8 @@ const SocialButton = ({ title, iconClass, url }) => (
       href={title === 'Email' ? `mailto: ${url}` : url}
       className={`button button__${title.toLowerCase()}`}
       type="button"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <i className={iconClass} />
       <div className="button__line" />
