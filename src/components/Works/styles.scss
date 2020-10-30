@@ -43,6 +43,13 @@
     background-color: lighten($color-secondary, 50%);
   }
 
+  &__img--4 {
+    background-position: top;
+  }
+  &__title--4 {
+    background-color: lighten(#1A202B, 40%);
+  }
+
   &__icon {
     position: absolute;
     background-color: darken(#EAEAEA, 10%);
