@@ -1,15 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import SocialButton from 'src/components/Welcome/SocialButton';
+import React from "react";
+import PropTypes from "prop-types";
+import SocialButton from "src/components/Welcome/SocialButton";
 
-import './styles.scss';
+import "./styles.scss";
 
 const Welcome = ({ socialButtons }) => {
   const mappedSocialButtons = socialButtons.map((socialButton) => (
-    <SocialButton
-      {...socialButton}
-      key={socialButton.title}
-    />
+    <SocialButton {...socialButton} key={socialButton.title} />
   ));
 
   return (
@@ -18,14 +15,10 @@ const Welcome = ({ socialButtons }) => {
         Bienvenue ! <br />
         Je suis Jordi, <br /> développeur web.
       </h1>
-      <p className="welcome__content">
-        Développeur Front End / React / Redux
-      </p>
-      <div className="welcome__buttons">
-        { mappedSocialButtons }
-      </div>
+      <p className="welcome__content">Développeur Front End / React / Redux</p>
+      <div className="welcome__buttons">{mappedSocialButtons}</div>
     </section>
-  )
+  );
 };
 
 Welcome.propTypes = {
